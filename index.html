@@ -12,21 +12,23 @@
 <body>
     <nav id="sidebar">
 
+        <!-- Inner part of sidebar, always shown in desktop mode. Not in mobile -->
         <div id="inner">
             <div id="user">
                 <div id="pic"></div>
             </div>
             <ul>
-                <li><i class="fa-solid fa-magnifying-glass"></i> </li>
-                <li><i class="fa-solid fa-house"></i></li>
-                <li><i class="fa-solid fa-tv"></i></li>
-                <li><i class="fa-solid fa-film"></i></li>
-                <li><i class="fa-solid fa-plus"></i></li>
-                <li><i class="fa-solid fa-newspaper"></i></li>
+                <!-- icons -->
+                <li id="sidebarIcon"><i class="fa-solid fa-magnifying-glass"></i> </li>
+                <li id="sidebarIcon"><i class="fa-solid fa-house"></i></li>
+                <li id="sidebarIcon"><i class="fa-solid fa-tv"></i></li>
+                <li id="sidebarIcon"><i class="fa-solid fa-film"></i></li>
+                <li id="sidebarIcon"><i class="fa-solid fa-plus"></i></li>
+                <li id="sidebarIcon"><i class="fa-solid fa-newspaper"></i></li>
             </ul>
         </div>
-
-        <div id="outer">
+        <!-- Extended sidebar -->
+        <div class="hidden" id="outer">
             <div id="username">Username</div>
             <ul>
                 <li>Search</li>
@@ -37,16 +39,16 @@
                 <li>News</li>
             </ul>
         </div>
-
-        <img id="visible" src="./images/dear-moon.jpg" alt="">
-        <img src="./images/earth-departure.jpg" alt="">
-        <img src="./images/earth-stage-separation.jpg" alt="">
-        <img src="./images/earth-takeoff.jpg" alt="">
-        <img src="./images/mars-base.jpg" alt="">
-        <img src="./images/mars-takeoff.jpg" alt="">
-        <img src="./images/moon-arrival.jpg" alt="">
         
     </nav>
+    <!-- Background images in background -->
+    <img id="visible" src="./images/dear-moon.jpg" alt="">
+    <img src="./images/earth-departure.jpg" alt="">
+    <img src="./images/earth-stage-separation.jpg" alt="">
+    <img src="./images/earth-takeoff.jpg" alt="">
+    <img src="./images/mars-base.jpg" alt="">
+    <img src="./images/mars-takeoff.jpg" alt="">
+    <img src="./images/moon-arrival.jpg" alt="">
     
 </body>
 </html>
