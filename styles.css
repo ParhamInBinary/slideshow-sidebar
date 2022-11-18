@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 992px) {
+
 #sidebar {
     position: fixed;
     left: 0;
-    background-color: rgb(50, 50, 50);
+    background-color: transparent;
     height: 100vh;
-    width: 25%;
-    transition: width .5s;
-    z-index: 1;
+    width: 21em;
     display: flex;
 }
 
 #inner {
-    background-color: rgba(120, 120, 120, 0.5);
-    width: 30%;
+    background-color: rgba(88, 88, 88, 0.7);
+    width: 7em;
     height: 100%;
 }
 
@@ -54,9 +54,14 @@ ul li i{
 }
 
 #outer {
-    background-color: grey;
-    width: 70%;
+    background-color: rgba(88, 88, 88, 0.7);
+    width: 14em;
     height: 100%;
+    transition: width .5s;
+}
+
+.hidden {
+    display: none;
 }
 
 #username {
@@ -77,17 +82,19 @@ ul li i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     list-style-type: none;
     color: white;
     margin-top: 7em;
 }
 
 #outer ul li{
+    margin-left: 1em;
     font-size: 30px;
 }
 
 #sidebar img {
     position: absolute;
-    z-index: 0;
+
+}
+
 }
