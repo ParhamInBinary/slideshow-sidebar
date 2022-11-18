@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    background-color: rgb(50, 50, 50);
+    height: 100vh;
+    width: 25%;
+    transition: width .5s;
+    z-index: 1;
+    display: flex;
+}
+
+#inner {
+    background-color: rgba(120, 120, 120, 0.5);
+    width: 30%;
+    height: 100%;
+}
+
+#user {
+    height: 12%;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border: 3px solid red;
+
+}
+
+#inner ul {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    margin-top: 7em;
+}
+
+ul li i{
+    font-size: 40px;
+}
+
+#outer {
+    background-color: grey;
+    width: 70%;
+    height: 100%;
+}
+
+#username {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    height: 12%;
+    width: 100%;
+    font-size: 30px;
+    margin-left: .5em;
+}
+
+#outer ul {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    margin-top: 7em;
+}
+
+#outer ul li{
+    font-size: 30px;
+}
+
+#sidebar img {
+    position: absolute;
+    z-index: 0;
+}
