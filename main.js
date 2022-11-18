@@ -1,5 +1,5 @@
 const sidebarExtention = document.querySelector("#outer")
-
+/** Functions to open and close sidebar extention */
 function addEventListenerToIcons() {
     const icons = document.querySelectorAll("#sidebarIcon")
 
@@ -10,7 +10,22 @@ function addEventListenerToIcons() {
 
 function openSidebar() {
     sidebarExtention.classList.toggle("hidden");
-
 }
 
+
+function addEventListenerToSidebarText() {
+    const sidebartext = document.querySelectorAll("#extendedSidebarText")
+
+    for ( let i = 0; i < sidebartext.length; i++) {
+        sidebartext[i].addEventListener("click", closeSidebar)
+    }
+}
+
+function closeSidebar() {
+    sidebarExtention.classList.toggle("hidden");
+}
+
+
+
 addEventListenerToIcons()
+addEventListenerToSidebarText()
