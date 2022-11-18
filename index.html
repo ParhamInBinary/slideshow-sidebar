@@ -14,6 +14,7 @@
 
         <!-- Inner part of sidebar, always shown in desktop mode. Not in mobile -->
         <div id="inner">
+            <!-- Logged in user -->
             <div id="user">
                 <div id="pic"></div>
             </div>
@@ -31,24 +32,27 @@
         <div class="hidden" id="outer">
             <div id="username">Username</div>
             <ul>
-                <li>Search</li>
-                <li>Home</li>
-                <li>TV-shows</li>
-                <li>Movies</li>
-                <li>My list</li>
-                <li>News</li>
+                <li id="extendedSidebarText">Search</li>
+                <li id="extendedSidebarText">Home</li>
+                <li id="extendedSidebarText">TV-shows</li>
+                <li id="extendedSidebarText">Movies</li>
+                <li id="extendedSidebarText">My list</li>
+                <li id="extendedSidebarText">News</li>
             </ul>
+            <p id="settings">Settings</p>
         </div>
         
     </nav>
     <!-- Background images in background -->
-    <img id="visible" src="./images/dear-moon.jpg" alt="">
-    <img src="./images/earth-departure.jpg" alt="">
-    <img src="./images/earth-stage-separation.jpg" alt="">
-    <img src="./images/earth-takeoff.jpg" alt="">
-    <img src="./images/mars-base.jpg" alt="">
-    <img src="./images/mars-takeoff.jpg" alt="">
-    <img src="./images/moon-arrival.jpg" alt="">
+    <div id="images">
+        <img id="visible" src="./images/dear-moon.jpg" alt="">
+        <img src="./images/earth-stage-separation.jpg" alt="">
+        <img src="./images/earth-departure.jpg" alt="">
+        <img src="./images/earth-takeoff.jpg" alt="">
+        <img src="./images/moon-arrival.jpg" alt="">
+        <img src="./images/mars-base.jpg" alt="">
+        <img src="./images/mars-takeoff.jpg" alt="">
+    </div>
     
 </body>
 </html>
