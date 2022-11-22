@@ -4,43 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slideshow-sidebar</title>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/78a289b7c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <script type="module" src="./main.js"></script>
-    <script src="https://kit.fontawesome.com/78a289b7c0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav id="sidebar">
+    <nav>
+        <ul class="inner">
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-tv"></i></li>
+            <li><i class="fa-solid fa-film"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-newspaper"></i></li>
+        </ul>
 
-        <!-- Inner part of sidebar, always shown in desktop mode. Not in mobile -->
-        <div id="inner">
-            <!-- Logged in user -->
-            <div id="user">
-                <div id="pic"></div>
-            </div>
-            <ul>
-                <!-- icons -->
-                <li id="sidebarIcon"><i class="fa-solid fa-magnifying-glass"></i> </li>
-                <li id="sidebarIcon"><i class="fa-solid fa-house"></i></li>
-                <li id="sidebarIcon"><i class="fa-solid fa-tv"></i></li>
-                <li id="sidebarIcon"><i class="fa-solid fa-film"></i></li>
-                <li id="sidebarIcon"><i class="fa-solid fa-plus"></i></li>
-                <li id="sidebarIcon"><i class="fa-solid fa-newspaper"></i></li>
-            </ul>
-        </div>
-        <!-- Extended sidebar -->
-        <div class="hidden" id="outer">
-            <div id="username">Username</div>
-            <ul>
-                <li id="extendedSidebarText">Search</li>
-                <li id="extendedSidebarText">Home</li>
-                <li id="extendedSidebarText">TV-shows</li>
-                <li id="extendedSidebarText">Movies</li>
-                <li id="extendedSidebarText">My list</li>
-                <li id="extendedSidebarText">News</li>
-            </ul>
-            <p id="settings">Settings</p>
-        </div>
+        <ul class="outer">
+            <li>Search</li>
+            <li>Home</li>
+            <li>TV-shows</li>
+            <li>Movies</li>
+            <li>My list</li>
+            <li>News</li>
+        </ul>
         
     </nav>
     <!-- Background images in background -->

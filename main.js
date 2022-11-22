@@ -1,31 +1,15 @@
-const sidebarExtention = document.querySelector("#outer")
-/** Functions to open and close sidebar extention */
-function addEventListenerToIcons() {
-    const icons = document.querySelectorAll("#sidebarIcon")
+function addEventListenersToIcons() {
+    const icons = document.querySelectorAll("li");
 
-    for ( let i = 0; i < icons.length; i++) {
-        icons[i].addEventListener("click", openSidebar)
+    for (let i = 0; i < icons.length; i++) {
+        icons[i].addEventListener("click", toggleExtendedMenu)
     }
 }
 
-function openSidebar() {
-    sidebarExtention.classList.toggle("hidden");
+function toggleExtendedMenu() {
+    const sidebar = document.querySelector("nav");
+    console.log(sidebar)
+    sidebar.classList.toggle("extended");
 }
 
-
-function addEventListenerToSidebarText() {
-    const sidebartext = document.querySelectorAll("#extendedSidebarText")
-
-    for ( let i = 0; i < sidebartext.length; i++) {
-        sidebartext[i].addEventListener("click", closeSidebar)
-    }
-}
-
-function closeSidebar() {
-    sidebarExtention.classList.toggle("hidden");
-}
-
-
-
-addEventListenerToIcons()
-addEventListenerToSidebarText()
+addEventListenersToIcons()
