@@ -1,8 +1,27 @@
 
 function main() {
     addEventListenersToIcons();
-    startSlideShow()
+    startSlideShow();
+    toggleMenuOnPhone();
 }
+
+/**
+ * Functions to open and close menu on phone view.
+ */
+function toggleMenuOnPhone() {
+    const burger = document.querySelector("#burger");
+    burger.addEventListener("click", openMenuPhone);
+    const xMarker = document.querySelector("#xMarker");
+    xMarker.addEventListener("click", openMenuPhone)
+}
+
+function openMenuPhone() {
+    const menu = document.querySelector("nav");
+    menu.classList.toggle("menuOut")
+}
+
+
+
 /**
  * A function to extend the sidebar for clear options
  */
