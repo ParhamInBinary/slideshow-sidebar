@@ -4,57 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Sidebar */
-nav {
-    position: fixed;
-    left: 0;
-    height: 100%;
-    width: 7em;
-    display: flex;
-    overflow-x: hidden;
-    transition: width .5s ease-in-out;
-    background-color: rgba(65, 65, 65, 0.883);
-}
-
-/* Inner bar */
-.inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-evenly;
-    width: 7em;
-    flex-shrink: 0;
-}
-
-/* Outer bar */
-.outer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-evenly;
-    width: 14em;
-}
-
-ul li {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-ul li:hover {
-    background-color: rgba(79, 79, 79, 0.701);
-    border-right: 5px solid red;
-    cursor: pointer;
-}
-
-/* Expanstion */
-.extended {
-    width: 21em;
-}
-
 /* Background images */
 img {
     width: 100%;
@@ -67,4 +16,124 @@ img {
 
 #images img.visible {
     opacity: 1;
+}
+
+
+/* Desktop View */
+@media screen and (min-width: 480px) {
+
+    /* Sidebar */
+    nav {
+        position: fixed;
+        left: 0;
+        height: 100%;
+        width: 7em;
+        display: flex;
+        overflow-x: hidden;
+        transition: width .5s ease-in-out;
+        background-color: rgba(65, 65, 65, 0.883);
+    }
+
+    /* Inner bar */
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-evenly;
+        width: 7em;
+        flex-shrink: 0;
+    }
+
+    /* Outer bar */
+    .outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-evenly;
+        width: 14em;
+    }
+
+    ul li {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li:hover {
+        background-color: rgba(79, 79, 79, 0.701);
+        border-right: 5px solid red;
+        cursor: pointer;
+    }
+
+    /* Expanstion */
+    .extended {
+        width: 21em;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    #xMarker {
+        display: none;
+    }
+}
+
+
+/* Phone view */
+@media screen and (max-width: 480px) {
+
+    #burger {
+        color: white;
+        background-color: transparent;
+        font-size: 30px;
+        margin: 10px 0 10px 10px;
+        position: absolute;       
+    }
+
+    nav {
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(65, 65, 65, 0.883);
+        z-index: 3;
+        transition: left .5s;
+    }
+
+    .inner {
+        display: none;
+    }
+
+    .outer {
+        height: 100%;
+        list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .outer li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuOut {
+        position: fixed;
+        left: 0;
+    }
+
+    #xMarker {
+        color: white;
+        position: relative;
+        top: -22em;
+        right: -12em;
+    }
 }
