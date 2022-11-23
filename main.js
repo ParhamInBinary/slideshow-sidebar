@@ -1,3 +1,11 @@
+
+function main() {
+    addEventListenersToIcons();
+    startSlideShow()
+}
+/**
+ * A function to extend the sidebar for clear options
+ */
 function addEventListenersToIcons() {
     const icons = document.querySelectorAll("li");
 
@@ -12,4 +20,31 @@ function toggleExtendedMenu() {
     sidebar.classList.toggle("extended");
 }
 
-addEventListenersToIcons()
+/**
+ * A function to simulate a slideshow in the background.
+ */
+function startSlideShow() {
+    setInterval(changeImage, 2000);
+}
+
+function changeImage() {
+    const images = document.querySelectorAll("#images img");
+    for (let i = 0; i < images.length; i++) {
+        const currentImg = images[i];
+        
+        let nextIndex;
+        if ( i === images.length - 1 ) {
+            nextIndex = 0;
+        } else {
+            nextIndex = i + 1;
+        }
+        
+        const nextImg = images[nextIndex];
+        
+        if ( currentImg.classList.contains("visible")) {
+            currentImg.classList.remove("visible");
+            nextImg.classList.add("visible");
+            break;
+        }
+    }
+}
