@@ -7,10 +7,12 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/78a289b7c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
-    <script type="module" src="./main.js"></script>
+    <script defer src="./main.js"></script>
 </head>
-<body>
+<body onload="main()">
+    <!-- A sidebar -->
     <nav>
+        <!-- The inner section -->
         <ul class="inner">
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><i class="fa-solid fa-house"></i></li>
@@ -19,7 +21,7 @@
             <li><i class="fa-solid fa-plus"></i></li>
             <li><i class="fa-solid fa-newspaper"></i></li>
         </ul>
-
+        <!-- The outer section -->
         <ul class="outer">
             <li>Search</li>
             <li>Home</li>
